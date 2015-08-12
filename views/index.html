@@ -9,34 +9,17 @@
   <script src="/bower_components/angular/angular.min.js"></script>
   <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js" ng-module="ui.bootstrap"></script>
   <script type="text/javascript" src="javascripts/app.js"></script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <h1>Hi!</h1>
-  <div class="counter" ng-controller="CounterCtrl">
-    {{ counter }}
-    <div ng-click="plusOne($index)">
+  <div class="container-fluid" ng-controller="CounterCtrl">
+    <div class="counter col-md-6 col-md-offset-3">
+      {{ counter }}
+    </div>
+    <div class="add col-md-6 col-md-offset-3" ng-click="plusOne($index)">
+      +
     </div>
   </div>
-
-  
-  <div ng-controller="ModalDemoCtrl">
-    <script type="text/ng-template" id="myModalContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title">Create account</h3>
-        </div>
-        <div class="modal-body">
-          
-        </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
-        </div>
-    </script>
-
-    <button type="button" class="btn btn-default" ng-click="open()">Create Account</button>
-  </div>
-
 </body>
 </html>

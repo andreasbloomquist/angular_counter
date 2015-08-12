@@ -6,3 +6,12 @@ body{
   background-repeat: no-repeat;
   color: white;
 }
+.counter, .add{
+  color: white;
+  text-align: center;
+  font-size: 15rem;
+}
+.add{
+  margin-top: 25rem;
+  cursor: pointer;
+}

@@ -2,8 +2,8 @@ var express = require("express"),
   path = require("path"),
   bodyParser = require("body-parser"),
   bcrypt = require("bcrypt"),
-  session = require("express-session"),
-  db = require("./models");
+  session = require("express-session");
+  // db = require("./models");
 
 
 var views = path.join(__dirname, "views");
