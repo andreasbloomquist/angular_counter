@@ -1,0 +1,8 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+body{
+  background-image: url('/images/inspiration.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}

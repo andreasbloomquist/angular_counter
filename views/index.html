@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="conterApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>You can do it!</title>
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.js" ng-module="ui.bootstrap"></script>
+  <script type="text/javascript" src="javascripts/app.js"></script>
+
+</head>
+
+<body>
+  <h1>Hi!</h1>
+  <div class="counter" ng-controller="CounterCtrl">
+    {{ counter }}
+    <div ng-click="plusOne($index)">
+    </div>
+  </div>
+
+  
+  <div ng-controller="ModalDemoCtrl">
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title">Create account</h3>
+        </div>
+        <div class="modal-body">
+          
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="cancel()">Cancel</button>
+        </div>
+    </script>
+
+    <button type="button" class="btn btn-default" ng-click="open()">Create Account</button>
+  </div>
+
+</body>
+</html>
